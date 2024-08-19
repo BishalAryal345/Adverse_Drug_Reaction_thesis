@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Model to predict drug risk level from adverse drug reaction using deep learning framework in Nepal.
+		</div>
+		<h2>Drug Sentiment Analysis</h2>
+		
+	</div>
+	</header>
+	<p style="color:red;font-size:30;text-align: center;"><b>Results</b></p>
+	<div class="results">
+
+
+		
+	{% if prediction == 1.0 %}
+	<h2 style="color:blue;">Its Possitive Sentiment</h2>
+	{% elif prediction == -1.0 %}
+	<h2 style="color:red;">Its Negative Sentiment</h2>
+	{% elif prediction == 0.0 %}
+	<h2 style="color:green;">Its neutral Sentiment</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
