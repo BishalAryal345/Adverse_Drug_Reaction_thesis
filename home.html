@@ -10,17 +10,17 @@
 	<header>
 		<div class="container">
 		<div id="brandname">
-			Machine Learning App
+			Model to predict drug risk level from adverse drug reaction using deep learning framework in Nepal.
 		</div>
-		<h2>Drug Sentiment Analysis</h2>
+		<h2>Adverse Drug Reaction</h2>
 		
 	</div>
 	</header>
 
 	<div class="ml-container">
 
-		<form action="{{ url_for('predict')}}" method="POST">
-		<p>Enter Your Message Here</p>
+		<form action="result.html" method="POST">
+		<p>Please Enter the drug name for its side effect</p>
 		<!-- <input type="text" name="comment"/> -->
 		<textarea name="message" rows="6" cols="50"></textarea>
 		<br/>
